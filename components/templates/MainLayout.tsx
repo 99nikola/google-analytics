@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { API_URL } from "../../api";
 
 const MainLayout: React.FC = (props) => {
     return (
@@ -8,15 +9,15 @@ const MainLayout: React.FC = (props) => {
             <title>NEXTJS</title>
         </Head>
 
-        <Link href="/">
+        <Link href={`${API_URL}`}>
             <a>HOME</a>
         </Link>
         <br />
-        <Link href="/users">
+        <Link href={`${API_URL}/users"}`}>
             <a>USERS</a>
         </Link>
         <br />
-        <Link href="/products">
+        <Link href={`${API_URL}/products`}>
             <a>PRODUCTS</a>
         </Link>
         <br />
