@@ -11,7 +11,7 @@ const UsersLayout: React.FC<UsersLayoutProps> = (props) => {
     const UserList = useMemo(() => (
         props.users.map(user => (
             <div key={user}>
-                <Link href={`${API_URL}/users/${user}`}>
+                <Link href={`/users/${user}`}>
                     <a>User: {user}</a>
                 </Link>
             </div>
